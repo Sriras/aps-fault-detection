@@ -3,7 +3,10 @@ from setuptools import find_packages, setup
 
 
 def get_requirments()->list[str]:
-    pass
+    
+    
+
+
 
 setup(
     
