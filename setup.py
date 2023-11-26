@@ -22,16 +22,18 @@ class Get_Requirements(object):
 
 
 
-    
-Req_Obj = Get_Requirements("requirements.txt", "-e .")  
 
-setup(
-    
-    name='sensor',
-    version='0.0.1',
-    author='sahas',
-    author_email='shsrnmn23@gmail.com',
-    packages=find_packages(),
-    install_requires=Req_Obj.get_requirments()
+if __name__ == "__main__":
 
-)
+    Req_Obj = Get_Requirements("requirements.txt", "-e .")  
+
+    setup(
+        
+        name='sensor',
+        version='0.0.1',
+        author='sahas',
+        author_email='shsrnmn23@gmail.com',
+        packages=find_packages(),
+        install_requires=Req_Obj.get_requirments()
+
+    )
